@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f26e24b7-b49d-416e-b8e0-f85fb89dcdd8" name="Changes" comment="" />
+    <list default="true" id="f26e24b7-b49d-416e-b8e0-f85fb89dcdd8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Client2/.idea/vcs.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -22,7 +27,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Gamer Store/Desktop/Code example/tictactoe"
+    "last_opened_file_path": "C:/Users/victus/Desktop/University/SharedFiles/Client2"
   }
 }]]></component>
   <component name="RunManager" selected="Application.Client">

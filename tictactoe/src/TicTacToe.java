@@ -112,7 +112,7 @@ public class TicTacToe extends UnicastRemoteObject implements ITicTacToe {
                     matches_writeLock.unlock();
                 }
 
-                System.out.println("Garbage Collector!");
+                System.out.println("");
                 Thread.sleep(TIMEOUT_GARBAGE * 1000);
             }
         }
@@ -228,7 +228,7 @@ public class TicTacToe extends UnicastRemoteObject implements ITicTacToe {
                     m.setPlayer2(p);
                     p.setMatch(m);
                     p.updateTimestamp();
-                    return 2; // Player 2
+                    return 2;
                 }
             }
         }
