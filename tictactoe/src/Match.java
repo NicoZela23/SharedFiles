@@ -5,7 +5,7 @@ public class Match {
     private boolean ready;
     private Player currentPlayer;
 
-    private static final char VAZIO = '.';
+    private static final char VACIO = '.';
     private static final char PLAYER1 = 'X';
     private static final char PLAYER2 = 'O';
 
@@ -14,11 +14,10 @@ public class Match {
         this.ready = false;
         this.currentPlayer = this.player1;
 
-        // Inicia o tabuleiro
 
         for(int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                this.board[i][j] = VAZIO;
+                this.board[i][j] = VACIO;
             }
         }
     }
@@ -59,20 +58,20 @@ public class Match {
         this.currentPlayer = (this.currentPlayer == this.player1 ? this.player2 : this.player1);
     }
 
-    public int move(int linha, int coluna) {
+    public int move(int linea, int columna) {
 
-        if ((linha < 0) || (linha > 2) || (coluna < 0) || (coluna > 2)) {
+        if ((linea < 0) || (linea > 2) || (columna < 0) || (columna > 2)) {
             return 0;
         }
 
-        if (board[linha][coluna] != VAZIO) {
+        if (board[linea][columna] != VACIO) {
             return 0;
         }
 
         if (currentPlayer == player1)
-            board[linha][coluna] = PLAYER1;
+            board[linea][columna] = PLAYER1;
         else if (currentPlayer == player2)
-            board[linha][coluna] = PLAYER2;
+            board[linea][columna] = PLAYER2;
         else
             return 0;
 

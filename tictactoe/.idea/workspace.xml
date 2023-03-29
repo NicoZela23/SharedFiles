@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f26e24b7-b49d-416e-b8e0-f85fb89dcdd8" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/../CalculosRMI/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CalculosRMI/src/Cliente.java" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/../Client2/.idea/vcs.xml" afterDir="false" />
+>>>>>>> 2dacfc855c843d631abcd0fd9d0edf1e61200a69
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +31,11 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+<<<<<<< HEAD
     "last_opened_file_path": "C:/Users/Gamer Store/Desktop/Dev/SharedFiles/tictactoe"
+=======
+    "last_opened_file_path": "C:/Users/victus/Desktop/University/SharedFiles/Client2"
+>>>>>>> 2dacfc855c843d631abcd0fd9d0edf1e61200a69
   }
 }]]></component>
   <component name="RunManager" selected="Application.Client">
