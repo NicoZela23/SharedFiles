@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -8,12 +9,12 @@ public class Main {
         //Inicializacion de las variables de escaner
         int opcionMenu = '0';
 
-        String nombre;
-        int edad;
-        int getSalario = 0;
-        String cargo;
-        CalculoImpuesto calculoImpuesto = null;
-
+        String nombre = null;
+        int edad = 0;
+        int Salario = 0;
+        String cargo = "";
+        ArrayList<Empleado> empleados = new ArrayList<>();
+        CalculoImpuesto calculoImpuesto = new CalculoImpuesto(0.13);
 
         //Menu de la biblioteca
         while (opcionMenu != 3) {
@@ -40,17 +41,25 @@ public class Main {
 
                         System.out.println("Ingrese el salario");
                         Scanner sal = new Scanner(System.in);
-                        getSalario = sal.nextInt();
+                        Salario = sal.nextInt();
 
                         System.out.println("Ingrese el cargo");
                         Scanner carg = new Scanner(System.in);
                         cargo = carg.nextLine();
-                        Empleado empleado = new Empleado(nombre, edad, getSalario, cargo);
+                        Empleado empleado = new Empleado(nombre, edad, Salario, cargo);
+                        empleados.add(empleado);
                         break;
                     case 2:
-                        CalculoImpuesto impuesto = new CalculoImpuesto();
-                        System.out.print("El IVA obtenido es: ");
-                        System.out.println(impuesto.calcularImpuesto(getSalario) + " BS");
+                        if (empleados.isEmpty()) {
+                            System.out.println("No hay empleados registrados");
+                        } else {
+                            System.out.println("Impuestos a pagar por empleado:");
+                            for (Empleado e : empleados) {
+                                double impu = calculoImpuesto.calcularImpuesto(e.getSalario());
+                                System.out.println(e.getNombre() + ": $" + impu);
+                            }
+                        }
+                        break;
 
                     case 3:
                         System.out.println("");

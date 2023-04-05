@@ -1,10 +1,10 @@
 public class Empleado {
     private String nombre;
     private int edad;
-    private int salario;
+    private double salario;
     private String cargo;
 
-    public Empleado(String nombre, int edad, int salario, String cargo) {
+    public Empleado(String nombre, int edad, double salario, String cargo) {
         this.nombre = nombre;
         this.edad = edad;
         this.salario = salario;
@@ -27,11 +27,12 @@ public class Empleado {
         this.edad = edad;
     }
 
-    public int getSalario() {
+    public double getSalario()
+    {
         return salario;
     }
 
-    public void setSalario(int salario) {
+    public void setSalario(double salario) {
         this.salario = salario;
     }
 
