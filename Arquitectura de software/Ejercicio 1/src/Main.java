@@ -56,7 +56,7 @@ public class Main {
                             System.out.println("Impuestos a pagar por empleado:");
                             for (Empleado e : empleados) {
                                 double impu = calculoImpuesto.calcularImpuesto(e.getSalario());
-                                System.out.println(e.getNombre() + ": $" + impu);
+                                System.out.println(e.getNombre() + ": BS " + impu);
                             }
                         }
                         break;

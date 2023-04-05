@@ -1,9 +1,8 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        //Escaners para datos ingresados por teclado
+        //Scaners para datos ingresados por teclado
         Scanner opMenu = new Scanner(System.in);
         Scanner opMenu2 = new Scanner(System.in);
 
@@ -15,8 +14,9 @@ public class Main {
         double catop = 0;
         double catad = 0;
         double rad = 0;
+        Figura figura = null;
 
-        //Menu de la biblioteca
+        //Menu de la calculadora
         while (opcionMenu != 3) {
             try {
                 System.out.println("");
@@ -47,6 +47,7 @@ public class Main {
                                 System.out.println("Ingresar el valor del lado");
                                 Scanner la = new Scanner(System.in);
                                 lado = la.nextInt();
+                                figura = new Cuadrado(lado);
                             case 4:
                                 break;
                             case 2:
@@ -57,18 +58,26 @@ public class Main {
                                 System.out.println("Ingresar el valor del cateto adyacente");
                                 Scanner cata = new Scanner(System.in);
                                 catad = cata.nextInt();
+
+                                figura = new trianguloRectangulo(catop,catad);
                             case 5:
                                 break;
                             case 3:
                                 System.out.println("Ingresar el valor del radio");
                                 Scanner ra = new Scanner(System.in);
                                 rad = ra.nextInt();
+                                figura = new Circulo(rad);
                             case 6:
                                 break;
                         }
                         break;
                     case 2:
-
+                        if (figura == null){
+                            System.out.println("Debe introducir una figura primero");
+                        }else{
+                            System.out.println("El area de la figura es: " + figura.calcularArea());
+                        }
+                        break;
                     case 3:
                         System.out.println("");
                         System.out.println("Hasta la proxima");
